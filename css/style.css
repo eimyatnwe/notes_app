@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap');
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Nunito Sans', sans-serif;
+	background-color: lightgreen;
+
+	display: flex;
+	flex-wrap: wrap;
+
+	/*margin: 0;*/
+	/*padding-top: 3rem;*/
+}
+
+.add{
+	background-color:#e56717;
+	font-size: 20px;
+	color:#fff;
+
+	padding:15px 17px;
+	border: 0;
+	border-radius: 50%;
+
+	cursor: pointer;
+
+	position: absolute;
+	top: 30px;
+	right: 20px;
+
+
+}
+
+.add:active{
+	transform: scale(0.98);
+}
+
+.note{
+	width: 400px;
+	height: 410px;
+	background-color: #f4f4f4;
+
+	border-radius: 20px 0 10px 0;
+	margin:20px 0;
+	margin-left: 8px;
+
+	overflow: hidden;
+}
+
+.note .toolbar{
+	width: 100%;
+	height: 50px;
+
+	display: flex;
+	justify-content: flex-end;
+
+	border-bottom: 1px solid #555;
+
+	margin-top: 10px;
+	margin-right: 15px;
+
+	position: relative;
+
+
+
+
+
+}
+
+.note .toolbar .save{
+	font-size: 16px;
+	color: #e56717;
+	background-color: transparent;
+
+	text-transform: uppercase;
+	border:0;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+.note .toolbar i{
+
+	margin-top: 15px;
+	margin-right: 17px;
+	cursor: pointer;
+
+
+}
+
+.note .head{
+	color: #e56717;
+	font-size: 14px;
+
+	text-transform: uppercase;
+	text-decoration: underline;
+
+	margin-left: 10px;
+	cursor: pointer;
+
+
+}
+
+.note input{
+	font-size: 15px;
+	background-color: transparent;
+	font-weight: bold;
+	text-transform: uppercase;
+
+	margin-left: 10px;
+	margin-bottom:  10px;
+	border: none;
+
+}
+
+.note input:focus{
+	outline: none;
+}
+
+.note input[placeholder]{
+	font-size: 17px;
+}
+
+.note .main{
+
+	padding: 10px;
+
+}
+
+.note textarea{
+	width: 100%;
+	height: 200px;
+	background-color: transparent;
+
+	font-family: inherit;
+	font-size: 1.2rem;
+
+	border: 0;
+	margin-left: 10px;
+}
+
+.note textarea:focus{
+	outline: none;
+}
+
+.note .toolbar .imgattach{
+	width: 250px;
+	height: 130px;
+	background-color: #fff;
+
+	border-radius: 10px;
+	box-shadow: 5px 10px 10px rgba(0,0,0,0.3);
+
+	overflow: hidden;
+
+	position: absolute;
+	top: 65%;
+	left: 30%;
+
+	display: none;	
+
+
+}
+
+.fa-times{
+	position: absolute;
+	top: 0;
+	right: 0;
+
+	cursor: pointer;
+}
+
+.imgattach p{
+
+	margin-top: 10px;
+	margin-left: 10px;
+
+	text-align: left;
+	
+	cursor:pointer;
+}
+
+.imgattach .tit{
+	font-weight: bold;
+}
+
+.imgattach .img:hover,
+.imgattach .voi:hover{
+
+	transform: scale(0.98);
+}
+
+
+.hidden{
+	display: none;
+}
+
+
+
+.buttons{
+
+	z-index: -1;
+	display: none;
+
+	transition: all 0.4s ease;
+}
+
+.buttons.show{
+	margin-bottom: 13px;
+
+	display: block;
+	z-index: 0;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.buttons.show i{
+	background-color: #f4f4f4;
+
+	margin-left: 5px;
+	padding: 7px;
+
+	border-radius: 10px;
+}
+
+.buttons.show i.change{
+	background-color: #e56717;
+}
+
+@media(max-width: 700px){
+
+	.add{
+		margin-left: 13px;
+	}
+}
+
+
+
+
+
+
